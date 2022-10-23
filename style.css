@@ -29,7 +29,20 @@
 
   }
 
-
+  .container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .calculator {
+    background: rgba(0, 0, 0, 0.356);
+    width: 350px;
+    box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
+    z-index : 10; 
+  }
 
 
 
