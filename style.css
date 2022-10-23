@@ -85,7 +85,15 @@
 }
 
 
-
+/* buttons */
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  padding: 0.5rem;
+  background: rgb(7, 53, 112);
+  margin: 1rem;
+}
 
 
 
