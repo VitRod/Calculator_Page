@@ -6,7 +6,10 @@
     box-sizing: border-box;
   }
 
-
+  body {
+    margin: 0;
+    background: linear-gradient(to right, #4b6cb7, #182848);
+  }
 
 
 
