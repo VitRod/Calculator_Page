@@ -122,7 +122,11 @@ button:focus {
   outline: none;
 }
 
-
+.operator {
+  background: rgb(11, 89, 161);
+  color: #fff;
+  font-size: 2rem;
+}
 
 
 
