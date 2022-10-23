@@ -137,6 +137,18 @@ button:focus {
   filter: brightness(90%);
 }
 
+.equal-sign {
+  grid-column: -2;
+  grid-row: 2 / span 4;
+  background: rgb(13, 206, 87);
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+  .calculator {
+    width: 90%;
+  }
+}
 
 
 
