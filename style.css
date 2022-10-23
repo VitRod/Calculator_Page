@@ -128,7 +128,14 @@ button:focus {
   font-size: 2rem;
 }
 
+.clear {
+  background: rgb(252, 71, 71);
+  color: #fff;
+}
 
+.clear:hover {
+  filter: brightness(90%);
+}
 
 
 
