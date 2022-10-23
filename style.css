@@ -66,7 +66,23 @@
     overflow-x: auto;
   }
 
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
 
+::-webkit-scrollbar-track {
+  background: #abcfff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(32, 61, 124);
+  border: 1px solid rgba(0, 0, 0, 0.233);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(6, 73, 160);
+}
 
 
 
