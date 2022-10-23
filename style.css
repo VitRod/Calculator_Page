@@ -11,6 +11,23 @@
     background: linear-gradient(to right, #4b6cb7, #182848);
   }
 
+/* Video Background */
+.video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
 
 
 
