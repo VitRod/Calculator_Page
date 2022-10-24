@@ -37,7 +37,30 @@ const calculate = {
     }
   }
 
-
+  function useOperator(operator) {
+    const currentValue = Number(calculatorDisplay.textContent);
+  
+    // prevent multiple operators
+    if (operatorValue && awaitingNextValue) {
+      operatorValue = operator;
+      return;
+    }
+  
+    // assign firstValue if no value
+    if (!firstValue || firstValue.length > 3) {
+      firstValue = currentValue;
+      calculatorDisplay.textContent = firstValue.toLocaleString();
+      calculatorDisplay.textContent = currentValue.toLocaleString();
+    } else {
+      const calculation = calculate[operatorValue](firstValue, currentValue).toLocaleString();
+      calculatorDisplay.textContent = calculation;
+      firstValue = calculation;
+    }
+  
+    // ready for next value, store operator
+    awaitingNextValue = true;
+    operatorValue = operator;
+  }
 
 
 
