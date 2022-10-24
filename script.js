@@ -88,5 +88,3 @@ inputBtns.forEach(inputBtn => {
 
 
 
-
-
