@@ -28,7 +28,14 @@ const calculate = {
     }
   }
 
-
+  function addDecimal() {
+    // if operator pressed, don't add decimal
+    if (awaitingNextValue) return;
+    // if no decimal, add one
+    if (!calculatorDisplay.textContent.includes('.')) {
+      calculatorDisplay.textContent = `${calculatorDisplay.textContent}.`;
+    }
+  }
 
 
 
