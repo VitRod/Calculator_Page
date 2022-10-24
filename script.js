@@ -62,7 +62,13 @@ const calculate = {
     operatorValue = operator;
   }
 
-
+// reset  all values & display
+function resetAll() {
+    firstValue = 0;
+    operatorValue = '';
+    awaitingNextValue = false;
+    calculatorDisplay.textContent = '0';
+  }
 
 
 
