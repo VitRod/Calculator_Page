@@ -17,7 +17,16 @@ const calculate = {
   let operatorValue = '';
   let awaitingNextValue = false;
 
-
+  function sendNumberValue(number) {
+    if (awaitingNextValue) {
+      calculatorDisplay.textContent = number;
+      awaitingNextValue = false;
+    } else {
+      // if current display value is 0, repalece it, if not add number
+      const displayValue = calculatorDisplay.textContent;
+      calculatorDisplay.textContent = displayValue === '0' ? number : displayValue + number;
+    }
+  }
 
 
 
